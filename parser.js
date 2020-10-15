@@ -20,7 +20,7 @@ async function checkPrice() {
     if (priceNumber < minPrice) {
       await sendEmail(
         'Price Is Low',
-        `The price on ${url} has dropped below ${minPrice}`
+        `The price on ${url} has dropped below $${minPrice}`
       )
     }
   } catch (e) {
