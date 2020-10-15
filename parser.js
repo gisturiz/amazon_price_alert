@@ -32,11 +32,18 @@ async function checkPrice() {
 function sendEmail(subject, body) {
   const email = {
     to: 'tinewe9255@justlibre.com',
-    from: 'amazon-price-checker@example.com',
+    from: 'isturizgustavo@gmail.com',
     subject: subject,
     text: body,
     html: body
   }
 
-  return sgMail.send(email)
+  return sgMail
+  .send(email)
+  .then(() => {
+    console.log('Email sent')
+  })
+  .catch((error) => {
+    console.error(error)
+  })
 }
