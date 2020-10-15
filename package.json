@@ -12,6 +12,8 @@
   "dependencies": {
     "@sendgrid/mail": "^7.2.6",
     "dotenv": "^8.2.0",
-    "nightmare": "^3.0.2"
+    "nightmare": "^3.0.2",
+    "node-cron": "^2.0.3",
+    "shelljs": "^0.8.4"
   }
 }
