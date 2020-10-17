@@ -31,7 +31,7 @@ async function checkPrice() {
 
 function sendEmail(subject, body) {
   const email = {
-    to: 'tinewe9255@justlibre.com',
+    to: 'yalanet226@insertswork.com',
     from: 'isturizgustavo@gmail.com',
     subject: subject,
     text: body,
