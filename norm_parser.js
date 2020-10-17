@@ -13,8 +13,8 @@ checkPrice()
 async function checkPrice() {
   try {
     const priceString = await nightmare.goto(url)
-                                       .wait("#priceblock_dealprice")
-                                       .evaluate(() => document.getElementById("priceblock_dealprice").innerText)
+                                       .wait("#priceblock_ourprice")
+                                       .evaluate(() => document.getElementById("priceblock_ourprice").innerText)
                                        .end()
     const priceNumber = parseFloat(priceString.replace('$', ''))
     if (priceNumber < minPrice) {
